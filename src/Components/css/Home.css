@@ -1,0 +1,680 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Puddles&display=swap');
+
+.container{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    /* background-color: red; */
+    background-image: linear-gradient(to right,rgba(181, 0, 0, 0.855) ,rgb(87, 0, 0) );
+    /* background-image: linear-gradient(to bottom right,#b3000cc0 ,#e4000f7e ); */
+}
+.clouds{
+    position: absolute;
+    width: 70vw;
+    height: 50vh;
+    /* background-color: black; */
+    top: 55%;
+    left: 15%;
+    filter: drop-shadow(0 0 0.75rem white);
+}
+.cloud1{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    left: 2%;
+    top: 30%;
+    border-left: 2px solid rgb(130, 130, 130);
+}
+.cloud2{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    left: 20%;
+    top: 10%;
+    border-left: 2px solid rgb(130, 130, 130);
+}
+.cloud3{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    left: 30%;
+    top: 5%;
+    border-top: 2px solid rgb(130, 130, 130);
+}
+.cloud4{
+    width: 20rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    left: 40%;
+    top: 2%;
+    transform: rotate(10deg);
+    border-top: 2px solid rgb(130, 130, 130);
+}
+.cloud5{
+    width: 15rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    left: 60%;
+    top: 10%;
+    transform: rotate(10deg);
+    border-top: 2px solid rgb(130, 130, 130);
+}
+.cloud6{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    left: 68%;
+    top: 30%;
+    border-right: 2px solid rgb(130, 130, 130);
+    border-top: 2px solid rgb(130, 130, 130);
+}
+.cloud7{
+    width: 30rem;
+    height: 20rem;
+    /* border-radius: 50%; */
+    background-color: white;
+    position: absolute;
+    left: 28%;
+    top: 30%;
+}
+.gift1{
+    position: absolute;
+    font-size: 5rem;
+    transform: rotate(-20deg);
+    animation: jiggle2 1s linear  infinite ;
+}
+.gift2 img{
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    width: 4rem;
+    height: 4rem;
+    transform: rotate(20deg);
+    animation: jiggle3 1s linear  infinite ;
+}
+.gift3 img{
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    width: 4rem;
+    height: 5rem;
+    transform: rotate(10deg);
+    animation: jiggle2 1s linear  infinite ;
+}
+.gift4 img{
+    position: absolute;
+    top: 35%;
+    left: 70%;
+    width: 5rem;
+    height: 5rem;
+    transform: rotate(-10deg);
+    animation: jiggle2 1s linear  infinite ;
+}
+.gift5 img{
+    position: absolute;
+    /* top: 5%; */
+    left: 90%;
+    width: 4.5rem;
+    height: 6.5rem;
+    transform: rotate(-10deg);
+    animation: jiggle3 1s linear  infinite ;
+}
+.Ctree{
+    filter: drop-shadow(0 0 0.75rem greenyellow);
+    z-index: -1;
+    width: 15vw;
+    height: 65vh;
+    /* background-color: black; */
+    /* border: 2px solid black; */
+    position: absolute;
+    left: 25%;
+    transform: rotate(-10deg);
+    display: grid;
+    grid-template-rows: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;
+    align-items: center;
+    justify-items: center;
+}
+.treeStar{
+    width: 100%;
+    height: 100%;
+    /* background-color: yellow; */
+    text-align: center;
+    font-size: 60px;
+    z-index: 1;
+    filter: drop-shadow(0 0 0.75rem gold);
+    animation-name: rotat;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes rotat {
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+.Leaf1{
+    width: 100%;
+    height: 100%;
+    /* background-color: greenyellow; */
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.leafbush1{
+    position: absolute;
+    top: 12%; 
+    width: 0;
+    height: 0;
+    border-left: 3.5rem solid transparent;
+    border-right: 3.5rem solid transparent;
+    border-bottom: 5rem solid green;
+}
+.light{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    align-items: center;
+    justify-items: center;
+    position: absolute;
+    width: 10rem;
+    height: 0.2rem;
+    border-bottom: 2px solid black;
+    z-index: 1;
+    border-radius: 70%;
+    right: -5.8rem;
+    top: 6.7rem;
+    transform: rotate(30deg);
+}
+.L1{
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: red;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 0.5rem white);
+}
+.L2{
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: yellow;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 0.5rem white);
+}
+.L3{
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: blue;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 0.5rem white);
+}
+.L4{
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: lightgreen;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 0.5rem white);
+}
+.L5{
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: pink;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 0.5rem white);
+}
+.Leaf2{
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(2, 189, 2); */
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.leafbush2{
+    position: absolute;
+    top: 20%; 
+    width: 0;
+    height: 0;
+    border-left: 5rem solid transparent;
+    border-right: 5rem solid transparent;
+    border-bottom: 8rem solid green;
+}
+.Leaf3{
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(0, 160, 0); */
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.leafbush3{
+    position: absolute;
+    top: 35%; 
+    width: 0;
+    height: 0;
+    border-left: 6rem solid transparent;
+    border-right: 6rem solid transparent;
+    border-bottom: 9rem solid green;
+}
+.Leaf4{
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(0, 123, 0); */
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.leafbush4{
+    position: absolute;
+    top: 50%; 
+    width: 0;
+    height: 0;
+    border-left: 7rem solid transparent;
+    border-right: 7rem solid transparent;
+    border-bottom: 10rem solid green;
+}
+.treeTrunk{
+    width: 100%;
+    height: 100%;
+    /* background-color: brown; */
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+.trunk{
+    width: 25%;
+    height: 100%;
+    background-color: saddlebrown;
+    
+}
+.Deer1{
+    position: absolute;
+    width: 15rem;
+    height: 10rem;
+    /* border: 2px solid black;  */
+    /* background-color: gray; */
+    left: 60%;
+    top: 45%;
+    filter: drop-shadow(0 0 0.75rem  rgb(255, 236, 125));
+    z-index: -1;
+}
+.Deer2{
+    position: absolute;
+    width: 15rem;
+    height: 10rem;
+    /* border: 2px solid black;  */
+    /* background-color: gray; */
+    left: 42%;
+    top: 40%;
+    transform: scaleX(-1);
+    filter: drop-shadow(0 0 0.75rem  rgb(255, 236, 125));
+    z-index: -1;
+}
+.Deer2 .DeerBody{
+    transform: rotate(0deg);
+    
+}
+.Deer3{
+    position: absolute;
+    width: 15rem;
+    height: 10rem;
+    /* border: 2px solid black;  */
+    /* background-color: gray; */
+    left: 20%;
+    top: 54%;
+    z-index: -1;
+    filter: drop-shadow(0 0 0.75rem rgb(255, 236, 125));
+}
+.Deer3 .DeerBody{
+    transform: rotate(-10deg);
+}
+.DeerHead{
+    height: 50%;
+    /* top: 25%; */
+    left: 15%;
+    position: absolute;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+.Faceup{
+    position: absolute;
+    width: 3rem;
+    height: 4rem;
+    background-color: #873600;
+    border-radius: 20px;
+}
+.Facedown{
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    background-image: linear-gradient( #793000,#873600);
+    border-top: 1px solid #6e2c00;
+    border-radius: 50%;
+    /* border: 2px solid black; */
+    top: 60%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+.Facedown .headnose{
+    position: absolute;
+    top: -11%;
+    border: 2px solid black;
+    background-color: black;
+}
+.DeerEars{
+    height: 20%;
+    width: 50%;
+    /* top: 25%; */
+    left: -12%;
+    position: absolute;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    /* background-color: #F1948A; */
+    
+}
+.ear1{
+    position: absolute;
+    height: 20px;
+    width: 40px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    background-color: #873600;
+    left: 10%;
+    top: 15%;
+    animation: jiggle2 1s linear  infinite ;
+}
+.ear2{
+    position: absolute;
+    height: 20px;
+    width: 40px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    background-color: #873600;
+    top: 15%;
+    left: 65%; 
+    animation: jiggle3 1s linear  infinite ;
+}
+.DeerBody{
+    transform: rotate(10deg);
+    z-index: -1;
+    position: absolute;
+    /* border: 2px solid #873600; */
+    background-color: #6e2c00;
+    width: 8rem;
+    height: 4.5rem;
+    border-radius: 30px;
+    top: 33%;
+    left: 10%;    
+}
+.DeerTail{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border-top: 4px solid #6e2c00;
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: rotate(30deg);
+    animation-name: jiggle;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.Antelopes{
+    z-index: -1;
+    top: -20%;
+    width: 5rem;
+    height: 2rem;
+    /* border: 2px solid black; */
+    position: absolute;
+    font-family: 'Rubik Gemstones', cursive;
+}
+.Ant1{
+    position: absolute;
+    color: gold;
+    font-size: 3rem;
+    left: 5%;
+    transform: scaleX(-1);
+}
+.Ant2{
+    position: absolute;
+    color: gold;
+    font-size: 3rem;
+    left: 55%;
+    
+}
+.Santa{
+    filter: drop-shadow(0 0 0.5rem  rgb(255, 236, 125));
+    z-index: -1;
+    position: absolute;
+    width: 13rem;
+    height: 15rem;
+    /* border: 2px solid black; */
+    /* background-color: white; */
+    left: 36%;
+    top: 27%;
+    display: grid;
+    grid-template-rows: 25% 25% 50%;
+    align-items: center;
+    justify-items: center;
+    transform: rotate(-10deg);
+    animation: jiggle3 1s linear  infinite ;
+}
+.cap{
+    width: 100%;
+    height: 100%;
+    /* background-color: royalblue; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+.captop{
+    position: absolute;
+    border-radius: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: white;
+}
+.capmid{
+    position: absolute;
+    top: 2%; 
+    width: 0;
+    height: 0;
+    border-left: 1.5rem solid transparent;
+    border-right: 1.5rem solid transparent;
+    border-bottom: 3rem solid red;
+}
+.capbottom{
+    top: 18%;
+    position: absolute;
+    height: 1rem;
+    width: 3.2rem;
+    background-color: white;
+    border-radius: 5px;
+}
+.Shead{
+    width: 100%;
+    height: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.headbase{
+    top: 25%;
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    background-color: #ecbcb4;
+    border-radius: 0px 0px 50px 50px;
+    display: grid;
+    grid-template-rows: 20% 20% 20% 40%;
+    align-items: center;
+    justify-items: center;
+}
+.headeyes{
+    padding-top: 5px;
+    width: 100%;
+    height: 100%;
+    /* background-color: black; */
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-items: center;
+}
+.Seye1{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border-top: 2px solid white;
+}
+.Seye2{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border-top: 2px solid white;
+}
+.headnose{
+    margin-top: 10px;
+    width: 5px;
+    height: 5px ;
+    border-radius: 50%;
+    /* background-color: white; */
+    border-left: 2px solid white;
+    border-top: 2px solid white;
+    transform: rotate(-45deg);
+    
+}
+.beard{
+    position: absolute;
+    top: 55%;
+    width: 0;
+    height: 0;
+    border-left: 1.5rem solid transparent;
+    border-right: 1.5rem solid transparent;
+    border-bottom: 4rem solid white;
+    transform: rotate(180deg);
+    border-radius: 10px;
+    z-index: 1;
+}
+.SBody{
+    position: absolute;
+    top: 45%;
+    width: 8rem;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    border-radius: 50px;
+}
+.Scoat{
+    height: 100%;
+    width: 1rem;
+    background-color: rgb(255, 237, 203);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Scoatin{
+    height: 100%;
+    width: 0.5rem;
+    background-color: black;
+    display: grid;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+}
+.Sbtn{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.heading{
+    position: absolute;
+    /* font-family: 'Rubik Gemstones', cursive; */
+    /* font-family: 'Pacifico', cursive; */
+    font-family: 'Rubik Puddles', cursive;
+    /* font-family: 'Sevillana', cursive; */
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    line-height: 3rem;
+    right: 5%;
+    filter: drop-shadow(0 0 0.5rem gold);
+    animation: zoom 2s linear infinite;
+}
+.bell1{
+    position: absolute;
+    right: 80%;
+    animation: jiggle3 1s linear  infinite ;
+}
+.bell2{
+    position: absolute;
+    right: -5%;
+    top: 25%;
+    animation: jiggle3 1s linear  infinite ;
+}
+
+
+@keyframes jiggle {
+    0%{
+        transform: rotate(30deg);
+        top: 45%;}
+    50%{
+        transform: rotate(60deg);
+        top: 50%;}
+    100%{
+        transform: rotate(30deg);
+        top: 45%;}    
+}
+@keyframes jiggle2 {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(10deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+@keyframes jiggle3 {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(-10deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+@keyframes zoom {
+    
+    0%{
+        font-size: 2.8rem;
+    }
+    50%{
+        font-size: 3rem;
+    }
+    100%{
+        font-size: 2.8rem;
+    }
+}
